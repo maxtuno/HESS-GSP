@@ -103,7 +103,7 @@ if __name__ == '__main__':
                 break
         cls.append(cl)
 
-    with open('test.gsp', 'w') as file:
+    with open('test.gcnf', 'w') as file:
         for cl in cls:
             print(cl, file=file)
 
