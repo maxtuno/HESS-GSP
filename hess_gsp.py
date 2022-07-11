@@ -55,7 +55,8 @@ def next_orbit(seq, sat):
 
 def step(i, j, k, seq, sat):
     seq[i], seq[j] = seq[j], seq[i]
-    sat[k] = random.randrange(0, b)
+    # sat[k] = random.randrange(0, b) # randomized
+    sat[k] = (sat[k] + 1) % b # deterministic
 
 
 def hess(clauses):
